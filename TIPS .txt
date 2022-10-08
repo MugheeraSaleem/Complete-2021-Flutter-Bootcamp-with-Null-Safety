@@ -1,0 +1,467 @@
+1. First material app and then (center for centering(child created here)) text widget in it. 
+
+2. First MaterialApp and then we make scaffold for the overall look and then add an appBar 
+   widget to which we add a title using the text widget.
+
+3. main, runApp, MaterialApp, home, scaffold, appBar(backgroundcolor,text) & body(backgroundcolor, image)
+
+4. WORKING WITH ASSETS. When adding assets we will create a directory in our folder and then go to pubspec.yaml and in 
+   assets that have been commented out we will add assets and write "image/" so all our files 
+   inside this directory become our files that we can use.
+
+5. Hotreload is made by using a Statelesswidget(). By writing a new class as MyApp and running MyApp in the runapp.
+   We write the code in the return clause which we want the hotreload to return. We can also use hotrestart which
+   smartly restarts the app. 
+
+6. MAKING UIs. While making UIs, container is a thing. we can place it but by default it is in the top left corner 
+   of the screen. We can use SafeArea() to keep anything inside our safe area. We can use EdgeInsets.all() for using
+   margins on all sides. We can also use EdgeInsets.symmetric() to define which part we want margin in. We can also
+   give height and width to a container. EdgeInsets.FromLTRB() is used to make it give values for all the sides.
+
+7. Padding is used to make the child in a container move inside the container. Margin is for the outside of a widget
+   but padding is for the inside of a widet.
+
+8. Container is for a single child. Column and Row allow multiple childern. We can use sizedbox for giving some spacing
+   between the containers. 
+
+9. MainAxisSize gives size of the main axis, verticalDirection gives it direction. MainAxisAlignment gives alignment
+   and CrossAxisAlignment also gives alignment. (Row and columns have same functionality). Double.infinity is 
+   also possible.
+
+10. CrossAxisAlignment.Stretch/.end are used for alignment in rows or columns. 
+
+11. We can add an image in the shape of a circle using the widget called CircleAvatar(). This is used to display the 
+    images of users. We can then add text and change its size, weight etc using Style().
+
+12. Fonts.google.com can be used to obtain the fonts. In text() class, style method has TextStyle() which can be used
+    to change the color, size, font of a text.
+
+13. SizedBox() can also be used to place a divvider inside the app, a single line. A container can be used to display text
+    and icons class can be used to display icons in the container. row inside a container can give us the leverage of using
+    rows inside a column or opposite of it.
+
+14. Alternatively we can use CARD class as a container for our text and icon. We can also use LISTTILE as an alternate to
+    the row class for displaying. 
+
+15. SizedBox() can be used to add something as well like a line using a DIVIDER class.
+
+16. EXPANDED() class can be used to keep the images expanded/streched in the screen. FLEX() method tells the image to 
+    expand in comparison to the other image.
+
+17. FLATBUTTON() is used to place a button around an image or other widgets. onPressed method gives the void callback
+    like this (){ SOME CODE  }
+
+18. Print() statement can be used to diagnose which part is running and which part is not.
+
+19. HotReload works on things in our BUILD() method.
+
+20. We can use var and some name to make variables. and use them with strings using a $ sign. after the $ sign.
+
+21. There are statefull widgets which are used when our app has a functionality. We used setState() method 
+    inside onPressed() to change the build from scratch.
+
+22. dart:math library is used to import functions like Random().nextInt() function for random numbers. 
+ 
+23. Sounds are in wav format and they are added in the assets folder just like images are done in the image 
+    folder.
+
+24. Flutter, dart packages can be downloaded and added into the pubspec.yaml file under the package "cupertino_icons" 
+    downloaded there and then we have to call "pub get" and then we import the package in our project like  alibrary.    
+
+25. audioplayers package is used to play the audio files. a player is specified and then the sound is played 
+    using the player.
+
+26. void keyword is used to create a function. We can give it arguments but it doesn't have an output because of void. 
+
+    void function(input1,input2){some code}
+
+27. function with void keyword does not return anything. we have to write the type of data instead of void 
+    there like
+
+    int function(input){output}  
+
+28. We can return a widget from a function provided that same widget is being returned in the same function.
+
+    Expanded function(input)(output)
+
+29. type of functions
+   
+	1.	|	Only some code
+	2.	|	with input
+	3.	|	with output using return
+	4.	|	arrow functions using short notation. For a single line of code functionality. =>
+
+int add(a,b){return a+b}	====	int add(a,b)=>a+b
+
+
+
+30. Function initialization: 
+    
+    Expanded BuildKey({required Color color,required int number}) {
+    return Expanded()
+
+    Function calling:
+
+    BuildKey(color: Colors.red, number: 1),
+
+31. We can add a TODO by adding // for comments and then we write //TODO:(This is to be done.)
+
+32. We can create lists by using List keyword and then we can specify its datatype by using 
+
+    List<string> = ['a','b','c']
+
+33. We can give a list to the children in a row or column. 
+
+34. We can use list.add method to add some member in the list.
+
+35. We can access some index by using indexof() method in lists. 
+
+36. mylist.insert can be used to insert some member.
+
+37. We can revert to previous versions by using vcs menu and history. 
+
+38. If(){}             ELSE IF(){}		ELSE(){}
+
+39. Class can be made by creating a new dart file. We can define properties in it. Then we can 
+    give the properties some values which is called a constructor. We have to import the file
+    in our project to use that class. 
+
+    Class Question{
+
+    String qText;
+    Boolean qAns;
+
+    Question({String q, bool a}){
+
+    qText=q;
+    qAns=a;
+
+    }}
+
+40. In class. variable is called a property and function is called a method. Abstraction, encapsulation
+    , polymorphism and inheritence are four pillars of OOP.
+
+41. Abstraction is dividing code into smaller parts using classes.
+
+42. Encapsulating is done with the properties to make them private using a "_" with their name. 
+
+43. Inheritence is when a class can have featrures from another class so we can save time writing 
+    that class. It is done by using th extends keyword. 
+
+44. Polymorphism is when we want to change a characteristic of a class, a method or a property. 
+    We just extend it and then while defining the same method we can write @override to mold the 
+    method as we want. We can use the super keyword to call the parents method. 
+
+45. rFlutterAlert can be used to build notifications. 
+
+46. "this." keyword can be used to change the property of a specific object of a class.  
+
+47. We can give our MaterilApp() a theme as well if we provide it with themedata. We can use colorzilla
+    to find specific colors and can copy the Hex code into the color class by adding 0xFF to get a fully
+    opaque color. 
+
+48. We can choose the text color by changing the texttheme in the themedata. 
+
+49. We can also use a darktheme().copywith() to change the things we want for our app from the dark 
+    theme.
+
+50. We can use wrap any widget with a theme widget so we can change the theme of a button etc, there's 
+    a property called data: which expects themedata() which we provide.
+
+51. we use main.dart for theming and then write a seperate dart file for the different screens.
+
+52. Margin and padding can both be used to keep the container away from the edge of screen.
+
+53. Borderradius in decoration is used to give the edges a round shape. 
+
+54. Expanded is used instead of height so that the widgets dont overflow when layout is changed.
+
+55. We can make some code reusable by making the code reusable from the flutter outline tab, extract 
+    widget is the option. It creates a seperate class for that widget which we can create a 
+    constructor for and then we can pass the property we want to change in it on the fly. 
+
+56. Keys are used when there are animations ie the objects are moving in the screen.  
+
+57. We can add the @required to make a property required when creating a constructor so that an 
+    object can't be made without it 
+
+58. We can use final to make something unchangeable in the imutable classes. 
+
+    instance variable = property = instance field
+
+59. Stateless widgets are immutable so they need final keyword with their properties. 
+
+60. A Const variable is calculated at the start of the compiling and cannot be accessed or 
+    changed after that. Numbers, hardcoded things are constants.
+
+61. A final is also immutable but it can be accessed after the app is compiled. Eg time can 
+    be given to final but not const. Const should be given values at the start whend defining.
+
+62. COnstants can be defined at the top so can be easily modified when required.
+
+63. We can add a child as a property to a widget that we have created as a widget type.
+    we give this child some name and then we pass it to the child of that widget.
+
+64. Font awesome flutter is used to add male/female icons.
+
+65. const labeltextstyle = TextStyle().
+
+66. gesturedetector can be used to create a button. It doesn't have a builtin styling.
+    It has properties like ontap() to detect the gestures. 
+
+67. To change anything upon pressing any button in a class we need a widget. 
+
+68. Enumeration is establishing the number of something. Enums are helpful when there are
+    multiple options for a property.
+
+    Enum Cartype {typeA, typeB, typeC};
+    Cartype.typeA
+
+    The datatype of this enum is same as enum name eg Cartype.
+
+69. Ternary operator is short form of if else. it is done in 3 steps on a single line
+    using 
+   
+    check this? do this: do this;
+    
+    bool canbuyAlcohol = myage>21 ? true : false;
+
+70. Functions can be passed to functions as arguments with keyword Function. We can also 
+    pass a function to a Function variable with some name so that it contains the whole 
+    function as value. We can also pass a function to a method of a class.
+
+71. While passing a method () are not required but when we want to trigger it, () are 
+    written.
+
+72. Constants should be written in a seperate file. K is used before the name of a constants.
+
+73. alignment.baseline is used to align at some baseline in a column or a row.
+
+74. var.tostring() is used to convert anything to a string.
+
+72. Slidertheme.of().copywith(some properties) can be used to change the properties we 
+    want to change in the theme.
+
+73. We can either combine widgets to make our own widget for flexibility or we can always
+    change the widget theme to change what we want to change. Themedata is modified to change
+    the theme if every widget.
+
+74. To get more flexibility we can either do inheritance and then do polymorphism to go about it
+    but in our case it is easy to build our widgets from scratch which is called composition. 
+
+75. We can make use of widgets from which eg buttons are made to make our own widgets.
+    
+    Class Constructor with properties.
+
+    RoundIconButton({this.Icon,this.onPressed})
+    final IconData Icon;
+    final Function onPressed;
+
+ 
+75. Routes and navigation are used when we have multiscreen apps.
+
+76. Navigator.push is used to push screens ontop of each other. This is passed in an onpressed 
+    of a button. This requires a context and a MaterialPageRoute().
+    
+    onPressed(){
+    Navigator.push(context,MaterialPageRoute(builder: (context) {return screen2} 
+    }
+
+77. To go back on a screen we use Navigator.pop(context).
+
+78. Multiple app pages are handled using routes which is a property of our materialapp(). 
+    we pass in to routes a map which is equal to a dictionary from python.
+
+    {'/': (context) => screen0,
+     '/first' : (context) => screen1,
+     '/second': (context) => screen2}
+
+     We can use initialroute in a materialapp to tell it about our initial screen.
+
+     Once routes are defined we can use Navigator.pushNamed(contexr, '/first') in onpressed of 
+     a button.
+  
+    Map < keytype , valuetype > MapName {
+    Key : Value }
+
+    Navigator.pushNamed(context,'/second');
+
+79. .toStringasFixed() is used to get a decimal number.
+
+80. We can get location using geolocator.dart package.
+
+81. Async functions are those which run in the background without freezing our interface.
+
+82. Synchronus is when steps are executed in an order. one after the other.
+
+83. Duration can be used to introduce some time duration in our app.
+
+84. Sleep can be used to sleep our program for some duration. This is a synchronus method.
+
+85. We can use future.delayed to introduce asyncronus delay. 
+
+86. When we add async the functions wait for the subsequent functions to fetch the result 
+    required to run the next functions. We make the function async and await for the function 
+    which is taking a delay. 
+
+87. The function that is waiting we have to change its datatype to future. Awaiting function 
+    with a future.
+  
+88. Await is used for the thing that we want to wait for. Async is that function and its 
+    return type is future.
+
+89. init state are the functions which run when a stateful widget starts. 
+
+90. deactivate are the functions which run when our widget is destroyed.
+
+91. build methods are run when anything in the widget changes.
+
+92. We catch exceptions in order to handle the errors after a try command.
+
+try{run some code;}
+catch(exception){print(exception)}
+
+
+93. uncaught exceptions can crash apps.
+
+94. if b is null assign it 30, otherwise keep it similar. this is known as null 
+    aware operator.
+
+    b ?? 30;
+
+95. throw keyword is used throw exceptions. 
+
+96. http library can be used to interact with webpages.
+
+97. API keys are the numbers assigned to us when we call data from our account. 
+    status codes are codes which tell us that what happened when we requested 
+    something. 200s are okay. 400s are not found. 500s are that the website is down.
+
+98. jsonDecode can be used to parse json data. 
+
+99. We can move data from screen1 to the screen2 by creating a proprty while creating screen2. 
+    Then we can assign that property some value from inside the screen1 and then we can acces 
+    that property inside screen2's state by using widget.property which has the access of that 
+    propert defined above when creating it.
+
+00. TextFields are used to let the user enter the data into our app. These have onchanged 
+    properties like buttons.
+
+01. We can use Navigator.pop to send the data back using the result in the pop method. 
+    After this the navigator.push of the last screen will get triggered and will give
+    us the property we have previously passed from the second screen when popping.
+
+02. We can use dropdownbutton to use a drop down button. Dropdownmanuitem is used to create
+    drop down button entries.
+
+03. for loops can be used to repeat the code.
+
+   for(i=0;i<10;i++){
+   some code;
+   }
+
+04. We can iterate on lists as well like python. we can use their values later. 
+
+05. for (String fruit in fruits){
+    print(fruit+'pie')
+    }
+
+06. Firstly we can import only a specific part of a library by using 
+    import '' show 'filename'.
+
+07. We can make platform specific UIs as well. By making different methods for both platforms,
+    we can check that if our platform is IOS or android by using dart:io library and by using 
+    it's platform file.    
+
+    If(Platform.isIOS){
+     then IOS functionality;
+    }
+    elseif(Platform.isAndroid){
+    then Android functionality
+    }
+
+08. Instead of using strings in routes we can create a new property ID in the screen 
+    class and refer to it in the routes. use static instead and we dont need to create 
+    objects of these classes.
+
+09. Static keyword can be used for methods and properties.
+
+10. Hero animations are when something is shared between both the pages we are transitioning from.
+    We wrap that shared widget with a hero widget. This widget requires a tag property which should 
+    be same at both the screens we are transitioning to and from. We can use same tag for as many 
+    screens as we want.
+
+11. To start with animations we have to make an animation controller. its a variable of type 
+    AnimationController. In init state method we use this variable to make a AnimationController() object.
+
+12. we upscale our class with a ticker by using with keyword and SingleTickerProviderStateMixin. this 
+    is used with vsync in the class to make use of animations. 
+
+13. we create animation controller in init state. In the init state we then use controller.forward or 
+    backward to move the value of the controller. We can also attach a listener in there to print the 
+    value of the controller. 
+
+14. We can then use this value to use it in colour opacity, in size of an object. We have to use listener
+    to use the value of the controller. We need to setstate as well inside init state
+
+15. We can use curved lines to use them in animations. We can aslo use statuslistener to use the status of 
+    the cntroller in our program. 
+
+16. All control is done in init state. 
+
+17. We need to dispose the controller as well once we dispose the screen in the dispose function.
+
+18. We can use another controller for colortween. to use tween we need to initiaize a new variable 
+    of type Animation.
+
+       animation = ColorTween(begin: Colors.blueGrey, end: Colors.white).animate(controller);
+   
+    This animation.value is then assigned to a color so we can use it.
+
+19. We use super to make our class do what the super class is doing when inheriting from a class.
+
+20. Mixins are used to inherit the same methods from multiple classes having different behaviours
+    in a single class. like ducks can fly aswell as swim. 
+
+21. We define mixins seperately and then they are added to a class using wth keyword after extending 
+    from a super class. 
+
+22. We have many animations that are prepackaged in the futter provided to us. 
+
+23. We can use animated_text_kit to make our text animate. This is done by replacing our Text widget 
+    with a AnimatedTextKit etc.
+
+24. We should always move the controller forward or backward in order to use its value. 
+
+25. We can use .copywith() method with constants as well. 
+
+26. Firebase is used to get out cloud for our app. We make a firebaseauth instance to authenticate users.
+    we create users using auth instances method caleed createuserusingemailandpassword.
+
+27. we need to go to firebase to create a signin method. 
+
+28. loading can be shown by using modal_progress_hud.
+
+29. We have to create firestore database to save our messages and users in the firebase website.
+
+30. We create FirebaseFirestore.instance as well just like auth to get the database functionality. 
+
+31. Streams are lists of futures. StreamBuilder builds the app everytime there's new data coming in the stream.
+
+32. ListView is used to keep the screen scrollable. controller of textfield can be used to clear the textfield.
+
+33. We wrap something in flexible widget to keep it from overflowing. 
+
+34. There are many different ways of lifting the state, many architectures to be precise. 
+
+35. Provider package is used to pass the states multiple levels down or up the tree.
+
+36. MaterialApp is wrapped with provider widget. here we define the type of the data we need to pass
+    and then in the builder property we return that variable/function. In the widget, at any level, 
+    where we need that data we just write 
+
+    Provider.of<string>(context)
+
+    to get the data/function wherever we need it. 
+
+37. ChangeNotifier class is used to create a istener at some level. 

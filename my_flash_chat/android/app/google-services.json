@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "441810160258",
+    "project_id": "flash-chat-9c690",
+    "storage_bucket": "flash-chat-9c690.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441810160258:android:1263296aa9c6bbf007429b",
+        "android_client_info": {
+          "package_name": "mugheerasaleem.com.my_flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441810160258-romapnoa9jauf49i8buvacvo2t2th46b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpSPcXeW3q7lOe43iPpALc-tFReid6Em0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441810160258-romapnoa9jauf49i8buvacvo2t2th46b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
